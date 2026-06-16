@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Services — dfcu Bank Help</title>
+  <link rel="stylesheet" href="dfcu-styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="top-stripe"></div>
+
+  <nav class="nav">
+    <a href="dfcu-index.html" class="logo">
+       <img
+          src="images/dfcu-logo.png"
+          alt="DFCU Logo"
+          style="height: 50px; width: auto; margin-top: 5px"
+        />
+    </a>
+    <a href="dfcu-guides.html" class="nav-link">Guides <i class="ti ti-chevron-down" style="font-size:12px;"></i></a>
+  </nav>
+
+  <div class="breadcrumb-bar">
+    <a href="dfcu-index.html" class="breadcrumb-link">Help</a>
+    <i class="ti ti-chevron-right breadcrumb-sep"></i>
+    <span class="breadcrumb-current">Financial Services</span>
+  </div>
+
+  <div class="page-layout">
+    <main class="page-main">
+      <h1 class="page-heading">Financial Services</h1>
+
+      <!-- Mobile Money — open by default -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="true" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-device-mobile-dollar"></i></div>
+            <div>
+              <div class="topic-name">Mobile Money</div>
+              <div class="topic-sub">Transfer money from your bank account to a mobile wallet and vice versa</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron open"></i>
+        </button>
+        <div class="topic-body open">
+          <ul class="topic-links">
+            <li><a href="dfcu-bank-to-wallet.html">Bank to Wallet</a></li>
+            <li><a href="dfcu-wallet-to-bank.html">Wallet to Bank</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Transfers -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-arrows-exchange"></i></div>
+            <div>
+              <div class="topic-name">Transfers</div>
+              <div class="topic-sub">Move money across banks, wallets and Western Union</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">EFT / RTGS</a></li>
+            <li><a href="#">International Transfers (TTs)</a></li>
+            <li><a href="#">Own Account Transfer</a></li>
+            <li><a href="#">Western Union</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Loans -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-coin"></i></div>
+            <div>
+              <div class="topic-name">Loans</div>
+              <div class="topic-sub">Enjoy our lending services</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">Apply for a Loan</a></li>
+            <li><a href="#">Loan Repayment</a></li>
+            <li><a href="#">Check Loan Balance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Utility Payments -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-file-invoice"></i></div>
+            <div>
+              <div class="topic-name">Utility Payments</div>
+              <div class="topic-sub">Pay your essential bills quickly</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">URA Tax Payment</a></li>
+            <li><a href="#">UMEME Electricity</a></li>
+            <li><a href="#">NWSC Water</a></li>
+            <li><a href="#">TV Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Account Services -->
+      <div class="topic-card">
+        <button class="topic-header" aria-expanded="false" onclick="toggleTopic(this)">
+          <div class="topic-left">
+            <div class="topic-icon-box"><i class="ti ti-settings"></i></div>
+            <div>
+              <div class="topic-name">Account Services</div>
+              <div class="topic-sub">Manage your profile, statements, security and referrals</div>
+            </div>
+          </div>
+          <i class="ti ti-chevron-down chevron"></i>
+        </button>
+        <div class="topic-body">
+          <ul class="topic-links">
+            <li><a href="#">View Statements</a></li>
+            <li><a href="#">Update Profile</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Register for Quick Banking</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <aside class="page-aside">
+      <div class="aside-card">
+        <h3 class="aside-heading">Popular Articles</h3>
+        <ul class="aside-links">
+          <li><a href="dfcu-mobile-money.html"><i class="ti ti-arrow-right"></i>Mobile Money</a></li>
+          <li><a href="dfcu-eft-rtgs.html"><i class="ti ti-arrow-right"></i>EFT / RTGS</a></li>
+          <li><a href="dfcu-international.html"><i class="ti ti-arrow-right"></i>International Transfers (TTs)</a></li>
+          <li><a href="dfcu-ura.html"><i class="ti ti-arrow-right"></i>URA Payment</a></li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h3 class="aside-heading">Need more help?</h3>
+        <p style="font-size:13px;color:var(--c-text-secondary);margin-bottom:12px;">Our team is available 24/7.</p>
+        <a href="dfcu-contact.html" class="contact-btn"><i class="ti ti-headset"></i> Contact Us</a>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 dfcu Bank. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTopic(headerEl) {
+      const body = headerEl.closest('.topic-card').querySelector('.topic-body');
+      const chevron = headerEl.querySelector('.chevron');
+      const isOpen = body.classList.contains('open');
+      body.classList.toggle('open', !isOpen);
+      chevron.className = `ti ${isOpen ? 'ti-chevron-down' : 'ti-chevron-up'} chevron${isOpen ? '' : ' open'}`;
+      headerEl.setAttribute('aria-expanded', String(!isOpen));
+    }
+  </script>
+</body>
+</html>
