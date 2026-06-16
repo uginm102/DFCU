@@ -194,7 +194,11 @@ ul { list-style: none; }
   overflow: hidden; display: block;
   transition: box-shadow 0.15s, transform 0.15s;
 }
-.guide-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.guide-card:hover { 
+  box-shadow: var(--shadow-md); 
+  transform: translateY(-2px); 
+  border-color: var(--steel-mid);
+}
 .guide-img {
   width: 100%; height: 120px;
   background: var(--navy-light);
@@ -234,12 +238,59 @@ ul { list-style: none; }
 }
 .chip:hover { background: var(--steel); color: #fff; }
 
+
+/* --- Footer CTA --- */
+/* MAIN CONTENT - This grows to push footer down */
+.main-content,
+.page-layout {
+  flex: 1; /* KEY: Takes all available space */
+}
+.footer-cta {
+  background: var(--steel-mid);
+  padding: 28px 24px;
+  text-align: center;
+}
+.footer-cta p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff;
+  color: var(--blue-light);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  border: none;
+  border-radius: var(--radius-xl);
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.footer-btn:hover {
+  opacity: 0.9;
+}
+.footer-btn .ti {
+  font-size: 16px;
+}
+
+/* --- Footer --- */
+.footer {
+  background: var(--navy);
+  border-top: 0.5px solid var(--c-border);
+  padding: 18px 24px;
+  text-align: center;
+}
 /* ── Footer ── */
 .footer {
   background: var(--navy); padding: 20px 32px;
   text-align: center; margin-top: auto;
 }
-.footer p { font-size: 12px; color: rgba(255,255,255,0.4); }
+.footer p { font-size: 12px; color:#ddddf2; }
 
 /* ===========================
    INNER PAGE LAYOUT
